@@ -42,7 +42,11 @@ a {
 /* CONTEÚDO PRINCIPAL */
 
 
+
+
 /* Primeiro banner */
+
+
 
 .banner-principal {
     color: var(--branco);
@@ -100,7 +104,11 @@ a {
     width: 35%;
 }
 
+
+
 /* TÍTULO DAS SEÇÕES */
+
+
 
 .titulo-secao {
     display: flex;
@@ -120,7 +128,11 @@ a {
     background-color: var(--cor-destaque);
 }
 
-/* Seçãõ beneficios */
+
+
+/* SeçãO beneficios */
+
+
 
 .beneficios {
     padding: 50px 120px;
@@ -191,7 +203,7 @@ a {
 
     display: grid;
 
-    /* place-items: center; é a mesma coisa que olocar: 
+    /* place-items: center; é a mesma coisa que colocar: 
        align-items: center; e justify-items: center; */
     place-items: center;
 }
@@ -208,7 +220,11 @@ a {
     width: 80%;
 }
 
-/* Banner meio */
+
+
+/* BANNER MEIO */
+
+
 
 .banner-meio {
     height: 60vh;
@@ -224,9 +240,14 @@ a {
     
 }
 
+
+
+/* LIVROS RECOMENDADOS */
+
+
+
 .livros-recomendados {
-    padding: 50px 120px;
-    margin-bottom: 120px;
+    padding: 60px 120px 100px
 }
 
 .livros {
@@ -234,17 +255,143 @@ a {
 
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .recomendado h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    width: 78%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 65%;
+    font-size: 1.5em;
+    margin-bottom: 40px;
 }
 
-.livro-2 h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+
+.titulo-secao span {
+    margin-bottom: 30px;
+}
+
+.recomendado img {
+    width: 100%;
+    height: 400px;
+
+    padding: 20px;
+    margin-bottom: 0px;
 
 }
+
+.recomendado h4{
+    display: flex;
+    justify-content: center;
+}
+
+.recomendado {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* RODAPE */
+
+
+
+.rodape {
+    background-color: var(--azul-escuro);
+    padding: 110px  120px 50px;
+}
+
+.logos {
+    display: grid;
+    flex-direction: column;
+    gap: 70px;
+
+}
+
+.rodape h4{
+    color: var(--branco);
+    padding: 0px 130px;
+    margin-bottom: 25px;
+    color: var(--cor-destaque);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+.rodape > p {
+    margin-bottom: 10px;
+    color: var(--branco);
+    padding: 0px 130px;
+}
+
+.rodape p {
+    font-size: 17   px;
+}
+
+.textos p {
+    margin-bottom: 10px;
+    color: var(--branco);
+    padding: 0px 130px;
+}
+
+.conteudo-rodape {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textos {
+    display: grid;
+    gap: 75px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 100px;
+}
+
+.logos-redes img{
+    width: 30px;
+    height: 30px;
+}
+.logos-redes {
+    display: flex;
+    gap: 40px;
+}
+
+.rodape span {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-color: var(--branco);
+    width: 80wh;
+    height: 1px;
+}
+
+.texto-final-rodape {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.arroba {
+    color: var(--branco);
+    display: flex; 
+}
+
+.links {
+    color: var(--branco);
+    display: flex;
+    gap: 70px;
+}
+
+
+
