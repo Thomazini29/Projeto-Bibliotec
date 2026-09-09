@@ -253,3 +253,16 @@ input[type="checkbox"]:checked::after {
     font-size: 0.8em;
     font-weight: 700;
 }
+
+.aguardando-retirada {
+    color: rgb(206, 134, 0);
+}
+
+.retirado {
+    color: rgb(62, 168, 62);
+}
+
+.ativo{
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--cor-destaque);
+}
