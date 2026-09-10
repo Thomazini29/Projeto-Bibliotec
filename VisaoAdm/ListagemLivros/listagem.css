@@ -1,3 +1,4 @@
+
 /* BUSCA */
 
 .area-busca {
@@ -10,13 +11,13 @@
 }
 
 .campo-busca {
-    /* esse elemnto pode ocupar o espaço disponível dentro do container flex. */
+    /* esse elemento pode ocupar o espaço disponível dentro do container flex. */
     flex: 1;
 
-    /* 
-        flex: 1; -> é a mesma coisa que:
-            flex-grow: 1; -> o elemento pode crescer quando sobra espaço.
-            flex-shrink: 1; -> o elemento pode encolher quando não existe espaço suficiente.
+    /*
+        flex: 1 é a mesma coisa que:
+            flex-grow: 1; o elemento pode crescer quando sobra espaço.
+            flex-shrink: 1; o elemento pode encolher quando não existe espaço suficiente.
             flex-basis: 0%; fala para o elemento começar do 0% e junto com os outros, pode crescer ou diminuir.
     */
 
@@ -43,7 +44,7 @@
     border: none;
     outline: none;
 
-    font-family: inherit; /* estamos dizendo pra herdar a fonte do pai */
+    font-family: inherit; /* estamos dizendo para herdar a fonte do pai */
     font-size: 1.1em;
     color: var(--textos-paginas);
 }
@@ -55,7 +56,7 @@
     width: 15%;
 
     padding: 0 20px;
-    
+
     border: 1px solid var(--cor-bordas);
     border-radius: 10px;
 
@@ -73,7 +74,6 @@
     font-weight: 600;
 
     cursor: pointer;
-
     transition: 0.2s;
 }
 
@@ -88,24 +88,25 @@
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* CABEÇALHO DA TELA */
+/* CABEÇALHO DA LISTA */
 
 .cabecalho-lista {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 
     align-items: center;
-    padding: 0 20px 20px;
+
+    padding: 0 20px 20px; 
 
     font-weight: 700;
 }
 
-/* Alinhando o nome a esquerda */
+/* alinhando o nome a esquerda */
 .cabecalho-lista h2:nth-child(1) {
     text-align: left;
 }
 
-/* ]Alinhando o restante ao centro */
+/* alinhando o restante ao centro */
 .cabecalho-lista h2 {
     text-align: center;
     font-size: 1em;
@@ -122,7 +123,6 @@
 
 .livro {
     display: grid;
-
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 
     align-items: center;
@@ -241,7 +241,7 @@ input[type="checkbox"]:checked::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     width: 30px;
     height: 30px;
 

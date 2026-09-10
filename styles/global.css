@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -20,16 +21,13 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--branco);
     color: var(--texto);
 }
 
-
-
-/*  CABEÇALHO */
+/* CABEÇALHO */
 
 a {
     color: var(--branco);
@@ -39,10 +37,11 @@ a {
 .cabecalho {
     background-color: var(--azul-escuro);
 
-    display: flex; 
-    /* POR PADRÃO O FLEX VEM NA DIREÇÃO ROW/LINHA, então não precisa do flex direction */
+    display: flex;
+    /* flex-direction: row; */
+    /* por padrão o flex vem na direção row/linha */
 
-    /* alinha n sentido do flex */
+    /* alinha no sentido do flex */
     justify-content: space-between;
 
     /* alinha no sentido contrário do flex */
@@ -50,7 +49,7 @@ a {
 
     padding: 0 120px;
 
-    height: 10vh;
+    height: 10vh; /* 10% da visualização vertical do dispositivo/navegador*/
 }
 
 .navegacao {
@@ -63,16 +62,14 @@ a {
 .navegacao a {
     text-transform: uppercase;
 
-    /* 1rem -> equivale a 16px (padrão da raiz do HTML) */
-    /* 1em -> pega o tamanho da tipografia do elemento pai */
-    font-size: 1em;
+    /* 1rem -> equivale a 16px (padrão da raíz do HTML) */
+    /* em -> pega o tamanho da tipografia do elemento pai */
+    font-size: 1em; 
     font-weight: 500;
-
 }
 
 
 /* LAYOUT DAS PÁGINAS PRINCIPAIS */
-
 
 /* Página */
 .pagina-listagem {
@@ -84,7 +81,7 @@ a {
 .menu-lateral {
     background-color: var(--azul-escuro);
 
-    height: 100vh; 
+    height: 100vh;
 
     border-radius: 0 30px 30px 0;
 
@@ -117,9 +114,9 @@ a {
 
     align-self: flex-end;
     cursor: pointer;
- }
+}
 
- /* LOGO */
+/* LOGO */
 
 .logo {
     margin-top: 10%;
@@ -158,7 +155,7 @@ a {
 }
 
 /* ITEM ATIVO */
-.ativo {
+.item-menu .ativo {
     padding-bottom: 10px;
     border-bottom: 4px solid var(--cor-destaque);
 }
@@ -183,7 +180,7 @@ a {
     font-size: 30px;
 }
 
-.botao-sair:hover {
+.botao-sair:hover{
     color: var(--cor-destaque);
 }
 
@@ -219,13 +216,12 @@ a {
 .cabecalho-pagina p {
     font-size: 1.2em;
     color: var(--textos-paginas);
-
 }
 
-/* CARD PRINCIPAL  */
+/* CARD PRINCIPAL */
 
 .card-listagem {
-    /*  APLICA O FILTRO DE DESFOQUE */
+    /* APLICA O FILTRO DE DESFOQUE */
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, 0.3);
 
@@ -236,10 +232,9 @@ a {
     height: auto;
 
     box-shadow: 
-        inset 0 20px 50px rgba(255, 255, 255, 0.5), /* inset -> sombra interna*/
+        inset 0 20px 50px rgba(255, 255, 255, 0.5), /* inset -> sombra interna */
         0 4px 4px rgba(0, 0, 0, 0.25); /* sombra externa */
-                
+
     display: flex;
     flex-direction: column;
-            
 }
