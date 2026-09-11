@@ -1,6 +1,5 @@
 
 const menu = document.getElementById("menu"); // pegando o elemento pelo ID
-console.log("Meu rabao esta peludo, rs...")
 
 // estamos pegando o elemento de forma genérica - pode ser classe (precisa trazer o ponto) ou pode ser ID (precisa trazer o hashtag).
 const navMenu = document.querySelector(".navegacao")
